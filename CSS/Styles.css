@@ -1,0 +1,92 @@
+.container-fluid{
+    background-image: url(/Images/Smoke\ Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar-toggler-icon{
+    background-color: white;
+    border-radius: 7px;
+    border: solid rgb(0, 0, 0) 4px;
+}
+#offcanvasNavbarLabel{
+    background-image: url(/Images/Smoke\ Background.jpg);
+}
+.navbar-toggler-icon:hover{
+    transform: scale(1.2);
+}
+.offcanvas-body{
+    background-image: url(/Images/Right\ Smoke\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-item{
+    text-decoration: underline red;
+    
+}
+#Logo{
+    border: solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+.navHead{
+    text-align: center;
+    color: white;
+    font-family: "Audiowide";
+}
+#homeBody{
+    background-image: url(/Images/Smoke\ Background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: (50,10);
+    scroll-margin: 100px;
+    overflow-x: hidden
+}
+
+.intro{
+    margin-top: 10%;
+    color: white;
+    height: 600px;
+}
+.intro span{
+    color: aqua;
+}
+
+#Labels {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+#Labels #lett{
+    list-style: none;
+    color: #fff;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    transition: 2s;
+  }
+  
+  #Labels:hover #lett {
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(20px);
+  }
+  
+  #lett:nth-child(1) {
+    transition-delay: 0;
+  }
+  #lett:nth-child(2) {
+     transition-delay: 0.4s;
+  }
+  
+  #lett:nth-child(3) {
+     transition-delay: 0.8s;
+  }
+  
+  #lett:nth-child(4) {
+       transition-delay: 1.2s;
+  }
+  
+  #lett:nth-child(5) {
+        transition-delay: 1.6s;
+  }
