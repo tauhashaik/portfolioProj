@@ -1,12 +1,12 @@
 .container-fluid{
-    background-image: url(/Images/Smoke\ Background.jpg);
+    background-image: url(/Images/6004798.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .navbar-toggler-icon{
-    background-color: white;
+    background-color:grey;
     border-radius: 7px;
-    border: solid rgb(0, 0, 0) 4px;
+    border: solid rgb(255, 255, 255) 4px;
 }
 #offcanvasNavbarLabel{
     background-image: url(/Images/Smoke\ Background.jpg);
@@ -33,7 +33,7 @@
     font-family: "Audiowide";
 }
 #homeBody{
-    background-image: url(/Images/Smoke\ Background.jpg);
+    background-image: url(/Images/6004798.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,7 +43,7 @@
 }
 
 .intro{
-    margin-top: 10%;
+    margin-top: 20%;
     color: white;
     height: 600px;
 }
@@ -52,41 +52,74 @@
 }
 
 #Labels {
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-#Labels #lett{
     list-style: none;
-    color: #fff;
-    font-size: 100px;
+    color: black;
+    font-size: 50px;
     font-weight: bold;
     letter-spacing: 10px;
-    transition: 2s;
+    font-family: "Audiowide";
   }
   
-  #Labels:hover #lett {
+  #Labels #Lett {
+    display: inline-block;
+    transition: transform 2s, opacity 2s, filter 2s;
+  }
+  
+  #Labels:hover #Lett {
     transform: rotate(45deg) translateY(-200px);
     opacity: 0;
     filter: blur(20px);
   }
   
-  #lett:nth-child(1) {
+  #Labels #Lett:nth-child(1) {
     transition-delay: 0;
   }
-  #lett:nth-child(2) {
-     transition-delay: 0.4s;
+  
+  #Labels #Lett:nth-child(2) {
+    transition-delay: 0.4s;
   }
   
-  #lett:nth-child(3) {
-     transition-delay: 0.8s;
+  #Labels #Lett:nth-child(3) {
+    transition-delay: 0.8s;
   }
   
-  #lett:nth-child(4) {
-       transition-delay: 1.2s;
+  #Labels #Lett:nth-child(4) {
+    transition-delay: 1.2s;
   }
   
-  #lett:nth-child(5) {
-        transition-delay: 1.6s;
+  #Labels #Lett:nth-child(5) {
+    transition-delay: 1.6s;
+  }
+  #Labels #Lett:nth-child(6) {
+    transition-delay: 2.0s;
+  }
+  #Labels #Lett:nth-child(7) {
+    transition-delay: 2.4s;
+  }
+  #Labels{
+    text-align: center;
+  }
+  h3{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .center-container {
+    display:flex;
+    justify-content: center;
+  }
+  
+  .center-button {
+   margin: 10px;
+   border-radius: 15px;
+   border-color: red;
+   background-color: grey;
+   font-family: "Audowide";
+  }
+
+  #who{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
   }
