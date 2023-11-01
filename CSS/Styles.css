@@ -153,6 +153,15 @@ ul li{
   #Labels #Lett:nth-child(8) {
     transition-delay: 3.0s;
   }
+  #Labels #Lett:nth-child(9) {
+    transition-delay: 3.4s;
+  }
+  #Labels #Lett:nth-child(10) {
+    transition-delay: 3.8s;
+  }
+  #Labels #Lett:nth-child(11) {
+    transition-delay: 4.2s;
+  }
   #Labels{
     text-align: center;
   }
@@ -420,9 +429,9 @@ ul li{
   height: 0;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(1px);
   opacity: 0;
-  transition: 0.1s;  
+  transition: 0.5s; 
   animation: animate 2s ease-in-out infinite;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08)
 }
@@ -539,4 +548,89 @@ ul li{
   height: 150px;
   /* background-color: grey transparent; */
   filter: opacity(0.7);
+}
+
+.containerT{
+  max-width:auto;
+  margin:auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  
+}
+
+.card{
+  position:relative;
+  margin:20px;
+  width:300px;
+  height:400px;
+  background: grey;
+  transform-style:preserve-3d;
+  transform:perspective(2000px);
+  transition:1s;
+  box-shadow:inset 100px 0 50px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+  z-index:1111;
+  transform:perspective(2000px) rotate(-10deg);
+  box-shadow:inset 20px 0 50px rgba(0,0,0,0.5);
+}
+
+.card .img-container{
+  position:relative;
+  width:100%;
+  height:100%;
+  border:1px solid #000;
+  box-sizing:border-box;
+  transform-origin:left;
+  z-index:1;
+  transition:1s;
+}
+
+.card .img-container img{
+  position:absolute;
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  object-fit:cover;
+}
+
+.card:hover .img-container{
+  transform:rotateY(-135deg);
+}
+
+.card .card-details{
+  position:absolute;
+  left:0;
+  top:0;
+  box-sizing:border-box;
+  padding:20px;
+  color:#000;
+}
+
+ .card .card-details h2{
+  margin:0;
+  padding:0.5em 0;
+  text-transform:uppercase;
+  font-size:2em;
+  color:white;
+}
+.card .card-details h2:hover {
+  color: black;
+  text-shadow:0 0 5px #03e9f4,
+              0 0 5px #03e9f4,
+              0 0 5px #03e9f4,
+              0 0 5px #03e9f4;
+}
+
+.card .card-details p{
+  margin:0;
+  padding:0;
+  line-height:25px;
+  font-size:1.1em;
 }
