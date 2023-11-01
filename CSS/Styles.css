@@ -537,5 +537,6 @@ ul li{
 #projP{
   width: 250px;
   height: 150px;
-  background-color: grey transparent;
+  /* background-color: grey transparent; */
+  filter: opacity(0.7);
 }
