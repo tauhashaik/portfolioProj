@@ -96,6 +96,9 @@
   #Labels #Lett:nth-child(7) {
     transition-delay: 2.4s;
   }
+  #Labels #Lett:nth-child(8) {
+    transition-delay: 3.0s;
+  }
   #Labels{
     text-align: center;
   }
@@ -198,7 +201,6 @@
   }
   
   h2 {
-    font-size:;
     font-weight: 20;
     color: white;
     letter-spacing: 5px;
@@ -214,3 +216,30 @@
                 0 0 5px #03e9f4,
                 0 0 5px #03e9f4;
   }
+
+  /* .card{
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,.1);
+    backdrop-filter: blur(5.3px);
+    width: 550px;
+    box-shadow: 15px 15px 50px rgba(0,0,0,.2);
+    color: #fff;
+    background-color: grey;
+  } */
+#Slogo{
+  width: 400px;
+  height: 300px;
+}
+.col{
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,.1);
+    backdrop-filter: blur(5.3px);
+    width: 550px;
+    box-shadow: 15px 15px 50px rgba(0,0,0,.2);
+    color: #fff;
+    background-color: grey transparent;
+}
+.col:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
