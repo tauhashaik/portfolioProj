@@ -103,12 +103,21 @@
     color: whitesmoke;
     text-align: center;
     font-weight: bold;
+    transition: 0.5s;
+  }
+  h3:hover{
+    color: black;
+    text-shadow:0 0 2px #03e9f4,
+                0 0 2px #03e9f4,
+                0 0 2px #03e9f4,
+                0 0 2px #03e9f4;
   }
 
   .center-container {
     display:flex;
     justify-content: center;
   }
+
   
   .center-button {
    margin: 10px;
@@ -122,4 +131,86 @@
     font-size: 30px;
     display: flex;
     justify-content: center;
+    color: whitesmoke;
+    transition: 0.5s;
+  }
+  #who:hover{
+    color: black;
+    text-shadow:0 0 2px #03e9f4,
+                0 0 2px #03e9f4,
+                0 0 2px #03e9f4,
+                0 0 2px #03e9f4;
+  }
+
+  #abth3{
+    /* font-size: 5em; */
+    /* letter-spacing: 10px; */
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    animation: typing 5s steps(18), cursor .4s step-end infinite alternate;
+    color: antiquewhite;
+}
+@keyframes cursor{
+    50% { border-color: transparent;}
+}
+@keyframes typing {
+    0% {
+      width: 0;
+    }
+    10% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  #abtP{
+    color: white;
+    border: solid black 2px;
+    border-radius: 5px;
+    background-color: grey transparent;
+    text-shadow: grey;
+    font-weight: bolder;
+    transition: 0.5s;
+  }
+  #abtP:hover{
+    color:black;
+    text-shadow:0 0 2px #03e9f4,
+                0 0 2px #03e9f4,
+                0 0 2px #03e9f4,
+                0 0 2px #03e9f4;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h2{
+    font-family: "Audiowide";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+  }
+  
+  h2 {
+    font-size:;
+    font-weight: 20;
+    color: white;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+  
+  h2:hover {
+    color: black;
+    text-shadow:0 0 5px #03e9f4,
+                0 0 5px #03e9f4,
+                0 0 5px #03e9f4,
+                0 0 5px #03e9f4;
   }
