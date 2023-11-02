@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <link rel="stylesheet" href="/CSS/Styles.css">
     <link rel="icon" href="https://i.postimg.cc/XZcnpyqM/Taha-Logo-2.png" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/f35ec457b5.js" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
 <body id="homeBody">
@@ -69,6 +70,12 @@
         <div class="center-container">
           <button class="center-button" >MY WORK</button>
           <button class="center-button" >CONTACT</button> 
+        </div>
+        <div>
+          <i class="fa-brands fa-facebook fa-bounce fa-2xl" style="color: #000000;"></i>
+          <i class="fa-brands fa-whatsapp fa-bounce fa-2xl" style="color: #000000;"></i>
+          <i class="fa-brands fa-slack fa-bounce fa-2xl" style="color: #000000;"></i>
+
         </div>
        </section>
 
@@ -250,46 +257,79 @@
         <div class="containerT">
           <div class="card">
             <div class="img-container">
-              <img src="/" alt=""/>
+              <img src="/Images/Ammara.png" alt=""/>
             </div>
             <div class="card-details">
-              <h2>Person 1</h2>
-              <p> </p>
+              <h2>Ammara Hoosen</h2>
+              <p>Tauha Shaik is honestly a great person to have in the workplace.
+                 Throughout our collaboration, Tauha has demonstrated an unwavering commitment to excellence and a tireless work ethic. 
+                 His keen eye for aesthetics and design is also visually appealing. I wholeheartedly recommend him.
+              </p>
             </div>
           </div>
 
-          <div class="containerT">
             <div class="card">
               <div class="img-container">
-                <img src="/" alt=""/>
+                <img src="/Images/Rajah.png" alt=""/>
               </div>
               <div class="card-details">
-                <h2>Person 2</h2>
-                <p> </p>
+                <h2>Muhammad Rajah</h2>
+                <p>He is excellent at developing close friendships with all his co-workers while displaying exceptional leadership skills, 
+                 He tends to always remains calm no matter how stressful a situation may be. 
+                  If I was to bet on his success,in a few years I would be rich.
+                </p>
               </div>
             </div>
 
-            <div class="containerT">
               <div class="card">
                 <div class="img-container">
-                  <img src="/" alt=""/>
+                  <img src="/Images/Asithandile PIC.png" alt=""/>
                 </div>
                 <div class="card-details">
-                  <h2>Person 3</h2>
-                  <p> </p>
+                  <h2>Asithandile Tyulu</h2>
+                  <p>Tauha is a dedicated professional with a creative and analytical thinking skills that continually impresses. 
+                    He approaches challenges with eagerness, consistently finding innovative solutions.
+                     What truly sets him apart is his remarkable resolve and exceptional emotional intelligence, 
+                     making him an outstanding asset to any team.</p>
                 </div>
               </div>
+        </div>
+              <div class="containerM">
+                <div class="card">
+                  <div class="img-container">
+                    <img src="/Images/Kayla.jpg" alt=""/>
+                  </div>
+                  <div class="card-details">
+                    <h2>Kayla Morgan Ward</h2>
+                    <p> </p>
+                  </div>
+                </div>
 
-              <div class="containerT">
+              
+                <div class="card">
+                  <div class="img-container">
+                    <img src="/Images/Haanim.jpg" alt=""/>
+                  </div>
+                  <div class="card-details">
+                    <h2>Haanim Pietersen</h2>
+                    <p>Tauha Shaik is an amazing person that just lights up the room he walks in. 
+                      His character is admirable and work ethic is amazing. He is able to grasp things well from all perspectives. 
+                      I would recommend Tauha if you want someone who can be a great friend as well as someone that can create and design websites well. </p>
+                  </div>
+                </div>
+
+              
                 <div class="card">
                   <div class="img-container">
                     <img src="/" alt=""/>
                   </div>
                   <div class="card-details">
-                    <h2>Person 4</h2>
+                    <h2>Person 7</h2>
                     <p> </p>
                   </div>
                 </div>
+              </div>
+
       </section>
 
       <BR><BR>
@@ -313,17 +353,24 @@
             <form
                 action="https://formspree.io/f/mbjvblqe"
                 method="POST">
-                  <label>
-                    Your email:
-                     <input type="email" name="email">
-                  </label>
-                  <label>
-                    Your message:
-                      <textarea name="message"></textarea>
-                  </label>
-                <!-- your other form fields go here -->
-              <button type="submit">Send</button>
+                <br>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                
+                  <label for="Surname">Surname:</label>
+                  <input type="text" id="surname " name="surname">
+                
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                
+                  <input type="submit" value="Submit">  
+
             </form>
+
+
         </section>
 
 
