@@ -3,10 +3,20 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+#j{
+  width: 200px;
+  height: 200px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
 .navbar-toggler-icon{
     background-color:grey;
     border-radius: 7px;
     border: solid rgb(255, 255, 255) 4px;
+}
+.navbar-toggler-icon:hover{
+  border: solid #03e9f4;
 }
 #offcanvasNavbarLabel{
     background-image: url(/Images/Smoke\ Background.jpg);
@@ -18,6 +28,10 @@
     background-image: url(/Images/Right\ Smoke\ background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#INTRO, #ABOUT, #WORK, #SKILLS, #PROJECT, #Testimonial, #Contact{
+  padding-top: 80px;
 }
 
 /* ul{
@@ -86,6 +100,22 @@ ul li{
     color: white;
     font-family: "Audiowide";
 }
+.icon-container {
+  margin-top: 35px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.icon-container i{
+  margin: 0 10px;
+}
+
+.center-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #homeBody{
     background-image: url(/Images/6004798.jpg);
     background-attachment: fixed;
@@ -108,6 +138,8 @@ ul li{
 #Labels {
     list-style: none;
     color: black;
+    -webkit-text-stroke: 1px grey;
+    /* text-stroke: 1px grey; */
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 10px;
@@ -152,6 +184,15 @@ ul li{
   }
   #Labels #Lett:nth-child(8) {
     transition-delay: 3.0s;
+  }
+  #Labels #Lett:nth-child(9) {
+    transition-delay: 3.4s;
+  }
+  #Labels #Lett:nth-child(10) {
+    transition-delay: 3.8s;
+  }
+  #Labels #Lett:nth-child(11) {
+    transition-delay: 4.2s;
   }
   #Labels{
     text-align: center;
@@ -420,9 +461,9 @@ ul li{
   height: 0;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(1px);
   opacity: 0;
-  transition: 0.1s;  
+  transition: 0.5s; 
   animation: animate 2s ease-in-out infinite;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08)
 }
@@ -539,4 +580,180 @@ ul li{
   height: 150px;
   /* background-color: grey transparent; */
   filter: opacity(0.7);
+}
+
+.containerT,.containerM{
+  max-width:auto;
+  margin:auto;
+  display:flex;
+  /* flex-wrap:wrap; */
+  justify-content:space-around;
+  /* display: grid; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap:35px;
+}
+
+
+
+.card{
+  position:relative;
+  margin:20px;
+  width:300px;
+  height:400px;
+  background: grey;
+  transform-style:preserve-3d;
+  transform:perspective(2000px);
+  transition:1s;
+  box-shadow:inset 100px 0 50px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+  z-index:1111;
+  transform:perspective(2000px) rotate(-10deg);
+  box-shadow:inset 20px 0 50px rgba(0,0,0,0.5);
+}
+
+.card .img-container{
+  position:relative;
+  width:100%;
+  height:100%;
+  border:1px solid #000;
+  box-sizing:border-box;
+  transform-origin:left;
+  z-index:1;
+  transition:1s;
+}
+
+.card .img-container img{
+  position:absolute;
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  object-fit:cover;
+}
+
+.card:hover .img-container{
+  transform:rotateY(-135deg);
+}
+
+.card .card-details{
+  position:absolute;
+  left:0;
+  top:0;
+  box-sizing:border-box;
+  padding:20px;
+  color:#000;
+}
+.card .card-details:hover{
+  color: black;
+  text-shadow:0 0 5px #03e9f4,
+              0 0 5px #03e9f4,
+              0 0 5px #03e9f4,
+              0 0 5px #03e9f4;
+}
+
+ .card .card-details h2{
+  padding:0.5em;
+  text-transform:uppercase;
+  font-size:larger;
+  color:rgb(0, 0, 0);
+  width: auto ;
+}
+.card .card-details h2:hover {
+  color: black;
+  text-shadow:0 0 5px #03e9f4,
+              0 0 5px #03e9f4,
+              0 0 5px #03e9f4,
+              0 0 5px #03e9f4;
+}
+
+.card .card-details p{
+  margin:0;
+  padding:0;
+  line-height:20px;
+  font-size: large;
+  width: 250px;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+  font-size: large;
+}
+label:hover{
+  color: black;
+  text-shadow:0 0 5px #03e9f4,
+              0 0 5px #03e9f4,
+              0 0 5px #03e9f4,
+              0 0 5px #03e9f4;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  color: black;
+  width: 100%;
+  padding: 8px;
+  border: 3px solid #03e9f4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: grey;
+  color: white;
+  padding: 10px 15px;
+  border: solid #03e9f4;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: large;
+}
+
+input[type="submit"]:hover {
+  background-color: #03e9f4;
+  border-color: #000;
+  color: #000;
+  font-size: larger;
+}
+#foot{
+  text-align: center;
+  margin-top: 60px;
+  color: red;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: medium;
+}
+
+@media screen and (min-width: 300px){
+  #homebody{
+    min-width: 300px;
+    min-height: 300px;
+  }
+  #j{
+    min-width: 300px;
+    min-height: 300px
+  }
+  ul{
+    min-width: auto;
+    min-height:auto
+  }
+  li{
+    min-width: 25px;
+    min-height: 25px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  h3{
+    min-width: auto;
+    min-height: auto;
+    font-size: larger;
+  }
 }
