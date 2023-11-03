@@ -6,7 +6,6 @@
 #j{
   width: 200px;
   height: 200px;
-  background: transparent;
   display: flex;
   justify-content: center;
 }
@@ -32,6 +31,9 @@
 
 #INTRO, #ABOUT, #WORK, #SKILLS, #PROJECT, #Testimonial, #Contact{
   padding-top: 80px;
+}
+#ABOUT{
+  margin-top: 60px;
 }
 
 /* ul{
