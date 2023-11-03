@@ -3,6 +3,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+#j{
+  width: 200px;
+  height: 200px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
 .navbar-toggler-icon{
     background-color:grey;
     border-radius: 7px;
@@ -723,4 +730,30 @@ input[type="submit"]:hover {
   -webkit-text-stroke: 1px rgb(0, 0, 0);
   font-weight: bold;
   font-size: medium;
+}
+
+@media screen and (min-width: 300px){
+  #homebody{
+    min-width: 300px;
+    min-height: 300px;
+  }
+  #j{
+    min-width: 300px;
+    min-height: 300px
+  }
+  ul{
+    min-width: auto;
+    min-height:auto
+  }
+  li{
+    min-width: 25px;
+    min-height: 25px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  h3{
+    min-width: auto;
+    min-height: auto;
+    font-size: larger;
+  }
 }
