@@ -1,5 +1,5 @@
 .container-fluid{
-    background-image: url(/Images/6004798.jpg);
+    background-image: url(/Images/Smoke\ Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -116,7 +116,7 @@ ul li{
   align-items: center;
 }
 #homeBody{
-    background-image: url(/Images/6004798.jpg);
+    background-image: url(/Images/Smoke\ Background.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
